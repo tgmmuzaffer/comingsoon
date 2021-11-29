@@ -354,3 +354,6 @@ C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\obj\
 C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\obj\Debug\net5.0\ref\comingsoon.dll
 C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\obj\Debug\net5.0\comingsoon.pdb
 C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\obj\Debug\net5.0\comingsoon.genruntimeconfig.cache
+C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\bin\Debug\net5.0\MailKit.dll
+C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\bin\Debug\net5.0\MimeKit.dll
+C:\Users\MONSTER\source\repos\camasırhane\comingsoon\comingsoon\comingsoon\bin\Debug\net5.0\BouncyCastle.Crypto.dll

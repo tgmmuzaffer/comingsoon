@@ -1,6 +1,8 @@
 ﻿using comingsoon.Models;
+using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using MimeKit;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -22,10 +24,31 @@ namespace comingsoon.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        [HttpPost()]
+        public IActionResult Mailsender(Mail mail)
         {
-            return View();
+            //mail.message=> gelen mesajı paneldeki maile gönder
+            //mail.emailAddress=> 
+            MimeMessage m = new MimeMessage();
+            BodyBuilder bodyBuilder = new BodyBuilder();
+            SmtpClient smtp = new SmtpClient();
+            bodyBuilder.HtmlBody = "body";
+            MailboxAddress from = new MailboxAddress("şirket ismi", "şirketmail adresi");
+            MailboxAddress to = new MailboxAddress("", mail.emailAddress);
+            m.From.Add(from);
+            m.Body = bodyBuilder.ToMessageBody();
+            m.Subject = "Talebinizi aldık.En kısa sürede dönüş yapılacaktır.";
+            m.To.Add(to);
+            smtp.Connect("smtp.gmail.com", 465, true);
+            smtp.Authenticate("tgm.muzaffer.deveci@gmail.com", "Yamahar123+-*/");
+
+            smtp.AuthenticationMechanisms.Remove("XOAUTH2");
+
+            smtp.Send(m);
+            smtp.Disconnect(true);
+            smtp.Dispose();
+
+            return Json(1);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

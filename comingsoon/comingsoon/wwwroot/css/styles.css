@@ -3059,6 +3059,12 @@ textarea.form-control-lg {
   border-color: #2a5555;
 }
 
+    .btn-primary.disabled:hover {
+        color: #fff;
+        background-color: #2c6969;
+        border-color: #2c6969;
+    }
+
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
@@ -3486,7 +3492,11 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   border-radius: 0.3rem;
 }
-
+/*.bt-lg:hover {
+    color: #fff;
+    background-color: #2c6969;
+    border-color: #2c6969;
+}*/
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
@@ -6724,6 +6734,10 @@ textarea.form-control-lg {
 .d-grid {
   display: grid !important;
 }
+    .d-grid:active {
+        background-color: #246363 !important;
+        border-radius:5px;
+    }
 
 .d-table {
   display: table !important;
