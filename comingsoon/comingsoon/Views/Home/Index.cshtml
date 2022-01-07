@@ -1,1 +1,27 @@
-﻿
+﻿@model comingsoon.Models.Mail
+
+                
+
+<form method="post" enctype="multipart/form-data" asp-action="Mailsender">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="emailAddress" class="form-label">E-Posta</label>
+        <input asp-for="emailAddress" class="form-control" id="emailAddress" autocomplete="on" />
+        <span asp-validation-for="emailAddress" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="message" class="form-label">Mesaj</label>
+        <textarea asp-for="message" class="form-control" id="message" style="height: auto;"></textarea>
+        <span asp-validation-for="message" class="text-danger"></span>
+
+    </div>
+    <div class="d-grid">
+
+        <button type="submit" class="btn btn-primary form-control">
+            Gönder
+        </button>
+    </div>
+</form>
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MONSTER\\source\\repos\\camasırhane\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj": {}
+    "C:\\Users\\MONSTER\\source\\repos\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MONSTER\\source\\repos\\camasırhane\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj": {
+    "C:\\Users\\MONSTER\\source\\repos\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MONSTER\\source\\repos\\camasırhane\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj",
+        "projectUniqueName": "C:\\Users\\MONSTER\\source\\repos\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj",
         "projectName": "comingsoon",
-        "projectPath": "C:\\Users\\MONSTER\\source\\repos\\camasırhane\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj",
+        "projectPath": "C:\\Users\\MONSTER\\source\\repos\\comingsoon\\comingsoon\\comingsoon\\comingsoon.csproj",
         "packagesPath": "C:\\Users\\MONSTER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MONSTER\\source\\repos\\camasırhane\\comingsoon\\comingsoon\\comingsoon\\obj\\",
+        "outputPath": "C:\\Users\\MONSTER\\source\\repos\\comingsoon\\comingsoon\\comingsoon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,9 +43,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
               "version": "[5.0.12, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -66,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
